@@ -1,0 +1,25 @@
+.searchengine {
+    margin-top: 4px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    opacity: 0.9;
+    color: #464141;
+  }
+  
+  .btn-secondary {
+    margin-top: 4px;
+    margin-left: 6px;
+    padding: 5px 20px;
+    border-radius: 8px;
+    opacity: 0.9;
+    transition: all 200ms ease;
+  }
+  
+  .btn-warning {
+    margin-top: 4px;
+    padding: 5px 20px;
+    border-radius: 8px;
+    opacity: 0.9;
+    transition: all 200ms ease;
+  }
+  
