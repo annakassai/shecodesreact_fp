@@ -4,7 +4,6 @@ import "./Search.css";
 
 export default function Search() {
   const [city, setCity] = useState("");
-  const [forecast, setForecast] = useState({}); 
 
   function displayForecast(response) {
     setForecast()({
