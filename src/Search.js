@@ -1,13 +1,20 @@
-import React from "react";
+import React,{useState} from "react";
 import axios from "axios"; 
 import "./Search.css";
 
 export default function Search() {
-  const []
+  const [city, setCity] = useState("");
+  const [forecast, setForecast] = useState({}); 
 
   function displayForecast(response) {
-
-  }
+    setForecast()({
+      temperature: response.data.main.temp,
+      wind: response.data.wind.speed,
+      humidity: response.data.main.humidity,
+      pressure:response.data.main.pressure, 
+      description: response.data.weather[0].description,
+  });
+}
 
   function handleSubmit(event) {
     event.preventDefault(); 
@@ -17,6 +24,10 @@ export default function Search() {
     let apiUrl = `${apiEndpoint}?q=${city}&appid=${apiKey}&units=${unit}`;
 
     axios.get(apiUrl).then(displayForecast)
+  }
+
+  function updateCity(event) {
+    setCity(event.target.value);
   }
 
   return (
@@ -43,8 +54,8 @@ export default function Search() {
               Locate
             </button>
           </div>
-        </div>
-      </form>
-    </div>
-  );
-}
+         </div> 
+        </form>
+      </div>
+      ); 
+    }
