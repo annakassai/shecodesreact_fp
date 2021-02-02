@@ -12,6 +12,8 @@ export default function Forecast(props) {
   };
 
   return (
+    <div>
+    <hr/>
     <div className="container">
       <div className="row">
         <div className="col-7">
@@ -79,5 +81,6 @@ export default function Forecast(props) {
         </div>
       </div>
     </div>
+  </div>
   );
 }
