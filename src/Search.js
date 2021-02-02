@@ -3,35 +3,36 @@ import axios from "axios";
 import "./Search.css";
 
 export default function Search() {
-  const [city, setCity] = useState("");
+  //const [city, setCity] = useState("");
+  //const [forecast, setForecast] = useState({}); 
 
-  function displayForecast(response) {
-    setForecast()({
-      temperature: response.data.main.temp,
-      wind: response.data.wind.speed,
-      humidity: response.data.main.humidity,
-      pressure:response.data.main.pressure, 
-      description: response.data.weather[0].description,
-  });
-}
+  //function displayForecast(response) {
+    //setForecast()({
+    //temperature: response.data.main.temp,
+    //wind: response.data.wind.speed,
+    //humidity: response.data.main.humidity,
+    //pressure:response.data.main.pressure, 
+    //description: response.data.weather[0].description,
+  //});
+//}
 
-  function handleSubmit(event) {
-    event.preventDefault(); 
-    let apiKey = "1fd01a094c047ffda9a1022db88d180b";
-    let unit = `metric`;
-    let apiEndpoint = "https://api.openweathermap.org/data/2.5/weather";
-    let apiUrl = `${apiEndpoint}?q=${city}&appid=${apiKey}&units=${unit}`;
+  //function handleSubmit(event) {
+    //event.preventDefault(); 
+    //let apiKey = "1fd01a094c047ffda9a1022db88d180b";
+    //let unit = `metric`;
+    //let apiEndpoint = "https://api.openweathermap.org/data/2.5/weather";
+    //let apiUrl = `${apiEndpoint}?q=${city}&appid=${apiKey}&units=${unit}`;
 
-    axios.get(apiUrl).then(displayForecast)
-  }
+    //axios.get(apiUrl).then(displayForecast)
+  //}
 
-  function updateCity(event) {
-    setCity(event.target.value);
-  }
+  //function updateCity(event) {
+    //setCity(event.target.value);
+  //}
 
   return (
     <div className="container">
-      <form onSubmit={handleSubmit}>
+       <form> 
         <div className="row">
           <div className="col-6">
             <input
@@ -40,7 +41,7 @@ export default function Search() {
               placeholder="🔍Enter a city here"
               autoFocus={true}
               autoComplete="off"
-              onChange={updateCity}
+              //onChange={updateCity}
             />
           </div>
           <div className="col-3">
