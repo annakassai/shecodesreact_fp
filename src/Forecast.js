@@ -2,11 +2,11 @@ import React from "react";
 import ReactAnimatedWeather from 'react-animated-weather'
 import "./Forecast.css";
 
-export default function Forecast(props) {
+export default function Forecast() {
   let weather = {
     description: "Sunny",
     temperature: 7,
-    pressure: 177,
+    pressure: 1177,
     humidity: 22,
     wind: 67
   };
@@ -29,16 +29,16 @@ export default function Forecast(props) {
             <span className="temperature">{weather.temperature}</span>
             <span className="units"> °C | °F </span>
           </h5>
-          <h5 className="data">Pressure:{weather.pressure}hPa</h5>
-          <h5 className="data">Humidity:{weather.humidity}%</h5>        
-          <h5 className="data">Wind:{weather.wind}km/h</h5>
+          <h5 className="data"><i class="fas fa-bolt"></i> Pressure: {weather.pressure} hPa</h5>
+          <h5 className="data"><i class="fas fa-tint"></i> Humidity: {weather.humidity} %</h5>        
+          <h5 className="data"><i class="fas fa-wind"></i> Wind: {weather.wind} km/h</h5>
         </div>
         <div className="col-1">
-          <p>0:00</p>
-          <p>3:00</p>
-          <p>6:00</p>
-          <p>9:00</p>
-          <p>0:00</p>
+            <p>0:00</p>
+            <p>3:00</p>
+            <p>6:00</p>
+            <p>9:00</p>
+            <p>0:00</p>
         </div> 
         <div className="col-2">
         <ReactAnimatedWeather

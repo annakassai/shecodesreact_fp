@@ -1,9 +1,9 @@
 h5,
 li,
 p {
-  font-family: sans-serif;
+  font-family: 'Public Sans', sans-serif;
   text-align: left;
-  line-height: 1;
+  line-height: 1.2;
   color: #464141;
 }
 
@@ -16,15 +16,6 @@ h5 {
 p {
   font-weight: 400;
   font-size: 16px;
-}
-
-.fasfasun {
-  padding: 8px;
-  margin-left: 0;
-  margin-right: 30px;
-  font-size: 60px;
-  width: 40px;
-  color: #e0a800;
 }
 
 .data {
