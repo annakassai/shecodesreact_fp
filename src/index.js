@@ -15,10 +15,10 @@ ReactDOM.render(
            rel="noreferrer"
            >
            Open-source code</a>, by <a
-            className="linkedin-link"
-            href="https://www.linkedin.com/in/annakassai91/"
-            target="_blank"
-            rel="noreferrer"
+           className="linkedin-link"
+           href="https://www.linkedin.com/in/annakassai91/"
+           target="_blank"
+           rel="noreferrer"
            >
            Anna Kassai
           </a>
