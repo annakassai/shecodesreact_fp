@@ -10,7 +10,7 @@ ReactDOM.render(
     <div className="footer-container">
       <small className="link">
         <a className="github-link"
-           href="https://github.com/annakassai/react_app"
+           href="https://github.com/annakassai/shecodesreact_fp"
            target="_blank"
            rel="noreferrer"
            >
