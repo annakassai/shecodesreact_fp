@@ -10,7 +10,7 @@ export default function Search() {
             <input
               type="search"
               className="searchengine"
-              placeholder="🔍Enter a city here"
+              placeholder="🔍 Search for a city"
               autoFocus={true}
               autoComplete="off"
             />

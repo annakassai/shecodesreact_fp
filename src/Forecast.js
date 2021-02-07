@@ -16,7 +16,7 @@ export default function Forecast() {
     <hr/>
     <div className="container">
       <div className="row">
-        <div className="col-7">
+        <div className="col-6">
           <h5 className="data">{weather.description}</h5>
           <h5 className="local-temperature">
             <ReactAnimatedWeather
